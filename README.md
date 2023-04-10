@@ -1,4 +1,5 @@
-# CoCare (alpha - read me)
+# CoCare 
+
   ## Problem
   Juggling work and parenting schedule is not an easy task. Parent want to do best on both world. Paying for daycare can be expensive and even you can afford it doesn't mean it available
 
