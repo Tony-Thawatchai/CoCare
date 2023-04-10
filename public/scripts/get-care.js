@@ -295,7 +295,7 @@ function drawDesktopRequestCard(request) {
     // initMap()
     // initializeMap();
 
-    let apiKey = "AIzaSyDNNpgqIXvu6Atdkpfgddrukax9-aV0Fcc";
+    let apiKey = "";
 
     // Create the script tag, set the appropriate attributes
     let script = document.createElement("script");
