@@ -15,6 +15,9 @@
 
  ## Presentation
     - https://docs.google.com/presentation/d/1to5cTwD2fxtBqC1KjZJQeF-FSPLSjJlAKkLIGeNGf28/edit?usp=sharing
+    
+ ## Demo event
+    - https://drive.google.com/file/d/1bG4m2H0Yw-hjS0yFflnzn79dhvD2Gs3A/view?usp=sharing
 
 ## Developers
   - [@genia](https://github.com/Eugenia-Chornobai)
