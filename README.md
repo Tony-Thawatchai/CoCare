@@ -1,28 +1,21 @@
 # CoCare (alpha - read me)
-  ## Run
-  To run the app with routers enabled use the vscode terminal and type in **firebase emulators:start**
-
   ## Problem
-    * Parents are busy
-    * Schedule conflict with work and kids
-    * Affordability and flexibility of community services
-  ## Solution
-    * Co-parenting after class
-    * Real-time location sharing
-    * Ensures constant communication between parents.
-  ## Features
-    * Search parent in the same school, neighborhood
-    * Ask/Give help to other parents
-    * List special care note of your kids & notify co-parent
-    * Retrieve real-time location of your kids
- ## User flow
-    - https://www.figma.com/file/hN0RNW8JgCe3sZeAsykTnn/Project-1-Group3-user-flow?node-id=3%3A325&t=vBQg4mkf72IfcXWx-1
- ## Wireframe
-    - https://www.figma.com/file/zYAI9AgdyYQ9LevblOPBfH/CoCare-Group3-wireframe?node-id=0%3A1&t=VMgNZEunE8rGBA6K-1
- ## Development milestones
-    - https://docs.google.com/document/d/1ega3tJV94z3MMWSKU_3dZsXjTdIz19SVisZ1YYcL7RM/edit?usp=sharing
+  Juggling work and parenting schedule is not an easy task. Parent want to do best on both world. Paying for daycare can be expensive and even you can afford it doesn't mean it available
 
-## Team Composition / Authors
+  ## Solution
+    * CoCare : Parenting together. We create CoCare to build a community of parent for helping each other take turn taking care of thier kids.
+
+  ## Features
+    * Search for parents in the same school, neighborhood
+    * Ask/Give help to other parents
+    * List special care note of your kids & notify co-parent automatically
+    * Retrieve real-time location of your kids
+    * Parent Coins to encourage user to help other
+
+ ## Presentation
+    - https://docs.google.com/presentation/d/1to5cTwD2fxtBqC1KjZJQeF-FSPLSjJlAKkLIGeNGf28/edit?usp=sharing
+
+## Developers
   - [@genia](https://github.com/Eugenia-Chornobai)
   - [@meraldz](https://github.com/mcazarjr)
   - [@tony](https://github.com/Tony-Thawatchai)
