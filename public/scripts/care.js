@@ -438,7 +438,7 @@ class CareRequest {
 
 // Load the Google Maps API script
 function initMap() {
-  const apiKey = "AIzaSyBwEb_-4wH7b5RPQ-Jy2xuzbaikswfhIUY";
+  const apiKey = "";
   const script = document.createElement("script");
   script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=geocodeAddress`;
   document.body.appendChild(script);
@@ -463,7 +463,7 @@ function geocodeAddress() {
 
 // map auto complete
 
-let apiKey = "AIzaSyDNNpgqIXvu6Atdkpfgddrukax9-aV0Fcc";
+let apiKey = "";
 
 // Create the script tag, set the appropriate attributes
 let script = document.createElement("script");
