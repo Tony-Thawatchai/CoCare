@@ -1,0 +1,60 @@
+<div class="give-care">
+    <div class="give-care-header-desktop">
+        <img src="../img/give-care-header.png" alt="" class="header-image-desktop">
+    </div>
+
+    <div class="give-care-header-mobile">
+        <img src="../icons/give-icon.svg" alt="" class="mobile-header-icon">
+        <h1>GIVE Care</h1>
+        <div>Requested care from co-parent</div>
+    </div>
+
+    <div class="care-home">
+        <div class="requests">
+            <h2 class="requests-h2"> Request List</h2>
+            <div class="requests-header">
+                <div class="requests-header-item active" id="pendingHeader">Pending</div>
+                <div class="requests-header-item" id="acceptedHeader">Accepted</div>
+                <div class="requests-header-item" id="completedHeader">Completed</div>
+            </div>
+            
+            <div class="request-list pending-requests active">
+
+            </div>
+            <div class="request-list accepted-requests">
+
+            </div>
+            <div class="request-list completed-requests">
+
+            </div>
+        </div>
+
+        <div class="request-details-mobile hide" style="display: none">
+            <div class="summary-item" id="request-type"></div>
+            <div class="summary-item" id="kids-details"></div>
+            <div class="summary-item" id="request-description"></div>
+            <div class="summary-item" id="request-notes"></div>
+            <div class="summary-item" id="request-date"></div>
+            <div class="summary-item" id="request-start-time"></div>
+            <div class="summary-item" id="request-end-time"></div>
+            <div class="summary-item" id="request-start-location"></div>
+            <div class="summary-item" id="request-end-location"></div>
+            <div class="summary-item" id="friends-details"></div>
+        </div>
+
+        <div class="success hide">
+            <div class="success-message">
+                <h1>Awesome! You've helped a parent.</h1>
+                <p>You earned 1 parent coin for completing this request.</p>
+                <i class="fa-regular fa-square-check fa-2xl"></i>
+            </div>
+            <div class="success-action">
+                <div> You can check this care request in your request list.</div>
+                <button class="button action-button" id="dashboardButton">Go To Request List</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

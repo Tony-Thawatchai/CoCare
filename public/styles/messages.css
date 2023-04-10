@@ -1,0 +1,256 @@
+.notAvailable{
+    /* width:  calc(100vw - 232px - 4%); */
+    /* height:  calc(100vh - 82px); */
+    backdrop-filter: blur(10px) ;
+    /* backdrop-filter: grayscale(30%); */
+    /* backdrop-filter: brightness(60%); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.notAvailable div {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100dvh;
+    height: 100vh;
+} */
+
+.section-header {
+    display: none;
+    width: 90%;
+    margin: 1.5rem auto;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.chat-header {
+    display: none;
+    font-family: 'Fredoka';
+    color: var(--main-blue);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.search {
+    display: none;
+    /* display: grid; */
+    grid-template-columns: 1fr auto;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    color: var(--main-blue);
+    background-color: #fff;
+    gap: 0.25rem;
+    padding: 0.75rem;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    color: var(--main-blue);
+    background-color: #fff;
+}
+
+.chat-wrapper {
+    /* display: grid; */
+    display: none;
+    background-color: #fff;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.messages-header-title {
+    padding: 1rem 1rem 0.5rem 1rem;
+    color: white;
+    background-color: #0FABDC;
+}
+
+.messages-header-title h2 {
+    font-family: 'Fredoka';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.users-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    height: 77.5dvh;
+    height: 77.5vh;
+}
+
+.users-list-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-bottom: 1px solid #ccc;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.user-last-message {
+    font-family: 'Lato';
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+.user-avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info-name {
+    font-family: 'Fredoka';
+    font-size: 1.2rem;
+}
+
+.user-info-status {
+    font-family: 'Lato';
+    font-size: 0.75rem;
+}
+
+.messages-wrapper-user-avatar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc;
+    gap: 1rem;
+}
+
+.messages-wrapper-user-avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.messages-wrapper-user-avatar h2 {
+    font-family: 'Fredoka';
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.messages-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-left: 1px solid #ccc;
+}
+
+.messages-area {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    display: flex;
+    flex-flow: column nowrap
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.message-text {
+    background-color: var(--main-blue);
+    padding: 1rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.message-mine {
+    justify-content: flex-end;
+}
+
+.message-mine .message-time {
+    text-align: right;
+}
+
+.message-content {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: white;
+}
+
+.message-time {
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+.forms-messages {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.forms-messages-button {
+    background-color: transparent;
+    color: var(--main-blue);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.message-input {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.message-submit {
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.25rem 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (width < 800px) {
+    main {
+        grid-template-rows: 1fr;
+    }
+    #secondaryMenu {
+        display: none;
+    }
+
+    .messages-wrapper {
+        display: none;
+    }
+
+    .messages-users-header {
+        display: none;
+    }
+}
+
+@media screen and (width > 800px) {
+    .section-header {
+        display: none;
+    }
+
+    .section-header {
+        grid-template-columns: 1fr auto;
+    }
+
+    .chat-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}

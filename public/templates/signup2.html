@@ -1,0 +1,192 @@
+<h2 class="page-title">Sign up</h2>
+<div id="EmailSignUp" class="inactive-div active-div signinForm">
+    <div class="input" id="userInput">
+        <form action="" class="">
+            <label for="txtEmailSignUp">Email</label>
+            <input type="email" name="txtEmailSignUp" id="txtEmailSignUp">
+
+            <label for="txtPasswordSignUp">Password</label>
+            <input type="email" name="txtPasswordSignUp" id="txtPasswordSignUp">
+        </form>
+    </div>
+
+    <!-- <button id="backBtnSignUp" type="button">Back</button> -->
+</div>
+
+<div id="parentDetails" class="inactive-div active-div">
+    <!-- <h2>parentDetails</h2> -->
+    <div class="signinForm">
+        <label for="firstName" class="visually-hidden">First name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="First name">
+        <label for="lastName" class="visually-hidden">last name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last name">
+        <!-- <label for="schoolOfKid" class="visually-hidden">School of your kid</label>
+        <input type="text" class="schoolAutoComplete" name="schoolOfKid" id="schoolOfKid"
+            placeholder="School of your kid"> -->
+        
+
+        <h3 class="photoUploadHeadline">Profile Picture</h3>
+        <div class="photoUpload">
+
+            <button id="takePhoto" class="photoBtn" type="button">
+
+                <i class="fa-solid fa-camera" aria-hidden=“true”></i><br>
+                Take Photo</button>
+            <button id="selectPhoto" class="photoBtn" type="button">
+                <i class="fa-solid fa-upload" aria-hidden=“true”></i><br>
+                Select Photo</button>
+            <form id="uploadPhoto" class="inactive-div">
+                <label for="fileInput"></label>
+                <input type="file" id="fileInput" accept="image/png, image/jpeg" required />
+                <button type="Upload"> Submit</button>
+            </form>
+            <div id="uploadPhotoConfirm">
+
+            </div>
+
+            <div id="videoArea">
+                <video id="video" width="320" height="240" autoplay></video>
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <br>
+                <button id="cancel" type="button">cancel</button>
+                <button id="capture" type="button">capture</button>
+                <button id="retake" type="button">retake</button>
+                <button id="confirmBtn" type="button">confirm</button>
+            </div>
+        </div>
+        <h3 class="photoUploadHeadline">Parent/Guardian's ID</h3>
+        <div class="photoUpload">
+            <button id="takeIDCard" class="photoBtn" type="button"> <i class="fa-solid fa-camera"
+                    aria-hidden=“true”></i><br>
+                Take Photo</button>
+            <button id="selectIDCard" class="photoBtn" type="button"><i class="fa-solid fa-upload"
+                    aria-hidden=“true”></i><br>
+                Select Photo</button>
+            <form action="#" id="uploadIDCard" class="inactive-div">
+                <label for="fileInputIDCard"></label>
+                <input type="file" id="fileInputIDCard" accept="image/png, image/jpeg" required />
+                <button type="Upload"> Submit</button>
+            </form>
+            <div id="uploadIDCardConfirm">
+
+            </div>
+            <div id="videoAreaIDCard">
+                <video id="videoIDCard" width="320" height="240" autoplay></video>
+                <canvas id="canvasIDCard" width="320" height="240"></canvas>
+                <br>
+                <button id="cancelIDCard" type="button">cancel</button>
+                <button id="captureIDCard" type="button">capture</button>
+                <button id="retakeIDCard" type="button">retake</button>
+                <button id="confirmBtnIDCard" type="button">confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="addKid" class="inactive-div active-div signinForm">
+    <h2 class="kidDetailsHeadline">Kid Details</h2>
+    <div id="kidAddedDetails">
+
+
+    </div>
+    <div id="KidForm" class="signinForm">
+        <p class="kidDetailsHeadline">Kid #1</p>
+        <label for="labelkidFirstName" class="visually-hidden"></label>
+        <input type="text" name="labelkidFirstName" id="labelkidFirstName" placeholder="Kid's First Name">
+        <label for="labelkidLastName" class="visually-hidden"></label>
+        <input type="text" name="labelkidLastName" id="labelkidLastName" placeholder="Kid's Last Name">
+        <label for="labelkidAge" class="visually-hidden"></label>
+        <input type="text" name="labelkidAge" id="labelkidAge" placeholder="Age">
+        <div id="allergyContainer">
+            <h3 class="kidDetailsHeadline">
+                Please put your kid allergy:
+            </h3><br>
+            <div id="checkboxWrap1">
+                <input type="checkbox" name="labelMilk" id="labelMilk" value="milk">
+                <label for="labelMilk">Milk</label>
+            </div>
+            <div id="checkboxWrap2">
+                <input type="checkbox" name="labelEgg" id="labelEgg" value="Egg">
+                <label for="labelEgg">Egg</label>
+            </div>
+            <div id="checkboxWrap3">
+                <input type="checkbox" name="labelPeanut" id="labelPeanut" value="Peanut">
+                <label for="labelPeanut">Peanut</label>
+            </div>
+            <div id="checkboxWrap4">
+                <input type="checkbox" name="labelGluten" id="labelGluten" value="Gluten">
+                <label for="labelGluten">Gluten</label>
+            </div>
+            <div id="checkboxWrap5">
+                <label for="labelOtherAllergy">Other allergy (please specified)</label>
+                <input type="text" name="labelOtherAllergy" id="labelOtherAllergy">
+            </div>
+        </div>
+        <label for="labelSchool" class="visually-hidden"></label>
+        <input type="text" name="labelSchool" id="labelSchool" placeholder="School">
+        <div id="map"></div>
+        <div id="infowindow-content">
+            <span id="place-name" class="locationTitle"></span><br />
+            <span id="place-address"></span>
+        </div>
+        <label for="labelSpecialNote" class="visually-hidden"></label>
+        <input type="text" name="labelSpecialNote" id="labelSpecialNote" placeholder="Special Note">
+
+        <!-- profile photo of kid -->
+        <h3 class="photoUploadHeadline">Kid's profile picture</h3>
+        <div class="photoUpload">
+
+            <button id="takePhotoKid" class="photoBtn" type="button">
+
+                <i class="fa-solid fa-camera" aria-hidden=“true”></i><br>
+                Take Photo</button>
+            <button id="selectPhotoKid" class="photoBtn" type="button">
+                <i class="fa-solid fa-upload" aria-hidden=“true”></i><br>
+                Select Photo</button>
+            <form id="uploadPhotoKid" class="inactive-div">
+                <label for="fileInput"></label>
+                <input type="file" id="fileInputKid" accept="image/png, image/jpeg" required />
+                <button type="Upload"> Submit</button>
+            </form>
+            <div id="uploadPhotoConfirmKid">
+
+            </div>
+
+            <div id="videoAreaKid">
+                <video id="videoKid" width="320" height="240" autoplay></video>
+                <canvas id="canvasKid" width="320" height="240"></canvas>
+                <br>
+                <button id="cancelKid" type="button">cancel</button>
+                <button id="captureKid" type="button">capture</button>
+                <button id="retakeKid" type="button">retake</button>
+                <button id="confirmBtnKid" type="button">confirm</button>
+            </div>
+        </div>
+        <button type="button" class="addMoreBtn" id="confirmKidDetailsBtn">confirm kid#1 details</button>
+            
+
+    </div>
+
+    <button id="addMoreKid" class="addMoreBtn">+Add kid</button>
+
+
+</div>
+<!-- 
+<div id="kidDetails" class="inactive-div active-div signinForm">
+    
+    <label for="kidAmount" class="visually-hidden">How many kid you have?</label>
+    <input type="number" name="kidAmount" id="kidAmount" placeholder="How many kid you have?">
+    <button id="kidAmountBth" class="addMoreBtn" type="button">Add kid details</button>
+
+
+
+
+</div> -->
+<div class="buttonWrap">
+    <button id="backBtnSignUp2" class="backBtn" type="button">Back</button>
+
+    <button id="submitBtnSignUp2" class="confirmBtn" type="button">Register</button>
+</div>
+
+</div>

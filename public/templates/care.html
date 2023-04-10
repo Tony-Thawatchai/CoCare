@@ -1,0 +1,174 @@
+<div class="create-request-page page" id="request-start">
+
+    <div class="get-care-header-desktop">
+        <img src="../img/get-care-header.png" alt="" class="header-image-desktop">
+    </div>
+
+    <div class="form-wrapper">
+
+        <div class="form-wrapper-page">
+
+            <h1>Create New Request</h1>
+
+            <form action="">
+
+                <div class="request-type">
+                    <label for="type">Request Type:
+                        <select class="form form-input" id="type">
+                            <option value="select-type" selected disabled>Select type</option>
+                            <option value="drop-off to school">Drop off to school</option>
+                            <option value="pick-up from school">Pick up from school</option>
+                            <option value="host after school">Host after school</option>
+                            <option value="pick-up and host after school">Pick up and host after school</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="help-description">
+                    <label>
+                        Help Description 
+                        <textarea class="form-input" id="request-details" name="request-details"></textarea>
+                    </label>
+                </div>
+
+                <div class="select-kid">
+                    <label for="child-details">Select Kid</label>  
+                    <div class="form-input" id="child-details">
+                    </div>        
+                </div>
+
+                <div class="start-location">
+                    <label for="start-location">
+                        Start location: 
+                    <input type="text" class="form-input" id="start-location">
+                    </label>
+                </div>
+
+                <div class="end-location">
+                    <label for="end-location">
+                        End location: 
+                    <input type="text" class="form-input" id="end-location">
+                    </label>
+                </div>
+            
+                <div class="date">
+                    <label for="date">
+                        Date: 
+                        <input type="date" class="form-input" id="date">
+                    </label>
+                </div>
+
+                <div class="time">
+                    <div class="start-time">
+                        <label for="start-time">
+                            Start time: 
+                        <input type="time" class="form-input" id="start-time">
+                        </label>
+                    </div>
+                    
+                    <div class="end-time">
+                        <label for="end-time">
+                            End time: 
+                        <input type="time" class="form-input" id="end-time">
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="friends-button-wrapper">
+            <div class="select-friend">
+                <label id="select-friend-label" for="friend-details">Send the request to</label>  
+                <div id="friend-details">
+                </div>        
+            </div>
+
+            <div class="buttons">  
+                <button class="general-button" id="next">Next
+                </button>    
+            </div>
+        </div>
+    </div>    
+</div> 
+
+<!-- REQUEST DETAILS CONFIRMATION PAGE -->
+
+<div id="request-confirm" class="page">
+
+    <div class="get-care-header-desktop">
+        <img src="../img/get-care-header.png" alt="" class="header-image-desktop">
+    </div>
+
+    <div class="form-wrapper">
+
+        <div id="form-wrapper-page">
+
+            <h1>Request Details Summary</h1>
+
+            <div class="request-type">
+                <h3>Help! I need</h3> 
+                <div id="request-type-output"></div>
+            </div>
+
+            <div id="kids-details-output">
+                <h4>Kids Details</h4>
+                <div id="kids-details-output-list">
+                    
+                </div>
+            </div>
+
+            <div class="request-details-output">
+                <h4>Request Details</h4> 
+                <div id="request-details-output"></div>
+            </div>
+
+            <div class="start-location-output">
+                <h4>Start Location</h4>
+                <div id="start-location-output"></div>
+            </div>
+    
+            <div class="end-location-output">
+                <h4>End Location</h4>
+                <div id="end-location-output"></div>
+            </div>
+
+            <div class="date-time-output">
+                <h4>Date and Time</h4>
+                <div id="date-output"></div>
+                <div id="start-time-output"></div>
+                <div id="end-time-output"></div>
+            </div>
+
+        </div>
+            
+        <div class="friends-button-wrapper">
+
+            <div class="friends-details-output">
+                <h4 id="friends-list-header">Send request to</h4>
+                <div id="friends-details-output"></div>
+            </div>
+
+            <div class="buttons">
+                <button class="general-button" id="back">Back</button>
+                <button class="general-button" id="submit">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+        <!-- PAGE SUCCESS REQUEST CONFIRMATION -->
+
+<div id="request-success" class="page">
+
+    <div class="success-banner">
+        <h1>Your request has been submitted!</h1>
+        <div>(This will cost you 1 parent coin)</div>
+        <i class="fa-regular fa-square-check fa-2xl"></i>
+    </div>
+
+    <div class="success-message">
+        <div> You can check this care request in your request list.</div>
+        <button class="general-button" id="dashboard">Go To Request List</button>
+    </div>
+</div>
+
