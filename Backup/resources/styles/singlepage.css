@@ -1,0 +1,8 @@
+
+.inactive-div {
+    display: none;
+}
+
+.active-div {
+    display: block;
+}

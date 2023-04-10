@@ -1,0 +1,67 @@
+profile {
+    name:
+    kid-name:
+    kid-allergy:
+    score: 
+    friendlist:{
+        "another profile.name":true,
+        "another profile.name":true,
+    }
+    friendRequest: {
+         "another profile.name":true,
+          "another profile.name":true,
+    }
+    chat-inbox:{
+        {   talkTo: (another profile name),
+            chatHistory: 
+                    {message: Lorem,
+                    sender: (profile : talkTo profile)
+                    },
+                    {message2: Lorem,
+                    sender: (profile : talkTo profile)
+                    }
+            }
+        },
+        {   talkTo: (another profile name)
+            chatHistory: {
+                    {message1: Lorem,
+                    sender: (profile : talkTo profile)
+                    },
+                    {message2: Lorem,
+                    sender: (profile : talkTo profile)
+                    }
+            }
+        }
+
+    }
+    event: [{help object 1},{help object 2} ,{help object 3} ,{help object 4} ]
+}
+
+help {
+    asker: (profile),
+    requestedTo: [(another profile),(another profile),(another profile),(another profile),],
+    giver: (another profile), // or undefine in case of no one accepting yet.
+    startTime: Date,
+    endTime: Date,
+}
+
+
+Edited Profile:
+
+profile {
+    name: {
+        "display_name": ,
+        "first_name": ,
+        "last_name": 
+    },
+    score: ,
+    profile_image: ,
+    birth_date: ,
+    friends: {},
+    friend_request: {},
+    kids: [{
+        "first_name": ,
+        "last_name": ,
+        "allergies": {}
+    }]
+}

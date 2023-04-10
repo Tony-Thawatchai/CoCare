@@ -1,0 +1,200 @@
+body {
+    font-size: 1rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 1rem 3rem 3rem 3rem;
+    line-height: 1.5;
+    margin: 0;    
+    background-color: #0FABDC;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive; 
+    text-align: left;
+
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.details label {
+    font-size: 1.4rem;
+}
+
+label, .kid-details label {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+  }
+  
+  input, select, textarea {
+  margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+  }
+
+  textarea {
+    margin-bottom: 0.75rem;
+  }
+    
+  .request-title input, .kid-details input {
+    width: 3%;
+  }
+
+  .kid-checkbox,
+  .friend-checkbox {
+    /* margin: 0.5rem; */
+    /* text-align: left; */
+    margin-left: -4rem;
+    font-size: 1rem;
+}
+  
+  #start-location, #end-location {
+    width: 100%;
+    /* padding: 1rem; */
+  }
+
+  input:focus, select:focus, textarea:focus {
+    Border-color: rgb(39, 107, 244);
+    Outline:rgb(39, 107, 244) 3px solid;
+  }
+
+  #submit, #next, #back, #dashboard {
+    font-size: 1rem;
+    font-family: 'Fredoka One', cursive;
+    color:  #0FABDC;;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px rgb(224 219 219);
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+  #submit:active, #next:active, #back:active, #dashboard:active {
+    background-color: grey;
+    color: white;
+    border: 2px solid rgb(39, 107, 244);
+  }
+
+ .select-kid,
+ .select-friend {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+  .details {
+    display: inline-block;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  #type, #kids-details, #request-details, #kids-notes, #date, #start-time, #end-time, #start-location, #end-location, #child-details {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem 0.7rem;
+    /* margin: 1rem 0 1rem 0; */
+    font-size: .9rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+  .submit-request-wrapper
+  h3 {
+    font-weight: 400;
+    font-size: .9rem;
+    margin-top: 0;
+  }
+
+  #kids-details,
+  #request-details-output,
+  #kids-notes,
+  #date-output,
+  #start-time-output,
+  #end-time-output,
+  #start-location-output,
+  #end-location-output {
+    margin: 1rem 0 1rem 0;
+    width: 95%;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem 0.7rem;
+    font-size: .9rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+  
+  #child-details,
+  #friend-details {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-bottom: 0.3rem;
+}
+
+#child-details label,
+#friend-details label {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: baseline;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+#child-details input:focus {
+  border-color: none;
+}
+
+#friend-details input:focus {
+  border-color: none;
+}
+
+.select-kid input:focus,
+.select-friend input:focus {
+    Border-color: none;
+    Outline: none;
+  }
+
+  .select-kid,
+  .select-friend {
+    margin-bottom: 1rem;
+  }
+
+  #type option:nth-child(1) {
+    color: lightgray;
+  }
+
+  #request-confirm {
+    display: none;
+  }
+
+  #request-success, #request-success h1 {
+    text-align: center;
+    display: none;
+  }

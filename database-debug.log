@@ -1,0 +1,5 @@
+11:04:40.579 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+11:04:40.695 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+11:04:48.901 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - cocare-d7fc8-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 99ms, init: 0ms
+11:04:48.969 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace cocare-d7fc8-default-rtdb status Active to Active
+10:37:06.381 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.

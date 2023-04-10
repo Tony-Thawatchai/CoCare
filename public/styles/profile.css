@@ -1,0 +1,437 @@
+:root {
+  --main-blue: #2558D5;
+  --light-blue: #0fabdc;
+  --bg-lightgrey: #f3f3f3;
+  --orange: #ff7e61;
+  --head-font: "Fredoka";
+  --body-font: "Lato";
+}
+
+p {
+  margin: 0;
+}
+
+.mainWrap {
+  padding: 2rem 2%;
+  font-family: var(--body-font), serif;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainWrap h2 {
+  font-weight: bold;
+  color: var(--main-blue);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.user-profile-profile {
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem 2%;
+}
+
+.user-profile {
+  display: none;
+}
+
+.user-profile-active {
+  display: block;
+}
+
+.menu-list a {
+  text-decoration: none;
+}
+
+.nav-login-user {
+  display: none;
+}
+
+.nav-login-user-active {
+  display: unset;
+}
+
+.nav-non-login-user {
+  display: none;
+}
+.nav-non-login-user-active {
+  display: unset;
+}
+
+.user-name {
+  text-align: center;
+}
+
+
+.mobile-menu-active {
+   opacity: 1;
+  /* display: flex;
+  flex-flow: column wrap; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transform: translateX(0);
+  position: absolute;
+  left: 0;
+  top: 82px;
+  bottom: -82px;
+  box-sizing: border-box;
+  height: calc(100vh - 82px) ;
+  min-height: 900px;
+  z-index: 10;
+  width: 232px;
+  background-color: white;
+  text-align: center;
+  padding: 2rem 2% 0 2%;
+}
+
+/* 
+#btnLogout {
+  align-self: end;
+  margin-bottom: 2rem;
+  justify-content: end;
+  font-family: var(--body-font),serif;
+  border: none;
+  background-color: unset;
+  text-align-last: right;
+  color: var(--main-blue);
+} */
+
+.site-desktop-logo img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-profile {
+  margin: 1.5rem auto 1.5rem auto;
+}
+.user-profile a {
+  text-decoration: none;
+
+  color: var(--main-blue);
+}
+.user-profile h2 {
+  font-weight: 700;
+}
+
+.user-profile-pic-wrap img {
+  width: 100%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.user-profile-pic-wrap {
+  margin: 1rem auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.menu-item {
+  list-style: none;
+  text-align-last: left;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: var(--main-blue);
+}
+
+.menu-item-active {
+  background-color: var(--main-blue);
+  color: white;
+}
+.menu-item-active .nested-item {
+  display: block;
+}
+
+.menu-item h2 {
+  display: inline;
+}
+
+.menu-item i {
+  margin-right: 1rem;
+  font-size: 1.75rem;
+}
+
+.nested-item {
+  /* padding-left: 2rem; */
+  display: none;
+}
+
+/* #menuItemCare:hover ~ .nested-item {
+  display: block;
+} */
+
+.nested-item i {
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+i.nested-item-active {
+  visibility: visible;
+}
+
+.nested-item h2 {
+  font-size: 1.25rem;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 2rem;
+}
+
+.page-title div {
+  font-size: 1rem;
+  color: black;
+  font-weight: normal;
+  font-family: var(--body-font), serif;
+}
+.page-title div i {
+  color: gold;
+}
+
+.section-wrap {
+  margin-top: 3rem;
+}
+
+.friendOutput {
+  display: flex;
+  padding: 1rem;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  /* justify-content: space-between;
+  -webkit-justify-content: space-between; */
+}
+
+.friendRequestOutput {
+  display: block;
+  
+  padding: 1rem;
+  background-color: white;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.kidArea {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.kidArea button {
+  order: -1;
+}
+
+.kidCard {
+  width: 150px;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: end;
+  padding: 1%;
+  border-radius: 10px;
+  text-align: right;
+
+  color: white;
+  font-family: var(--head-font), serif;
+  /* background-color: white; */
+}
+
+.kidCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.kidCard p {
+  font-weight: bold;
+}
+.kidCard p:last-of-type {
+  font-weight: normal;
+}
+
+.kidArea button {
+  color: var(--light-blue);
+  font-weight: bold;
+  font-family: var(--head-font), serif;
+  background-color: var(--bg-lightgrey);
+  border: 3px solid lightgray;
+  border-radius: 10px;
+}
+.kidArea button:hover {
+  color: white;
+  background-color: var(--orange);
+}
+
+.friendRequestCardWrap {
+  display: flex;
+  flex-flow: row wrap;
+  /* overflow-x: scroll ; */
+  /* justify-content: space-between;
+  -webkit-justify-content: space-between; */
+  gap: 1rem;
+}
+
+.friendRequestCard {
+  flex-basis: 25%;
+  font-family: var(--head-font), serif;
+  background-color: var(--bg-lightgrey);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.friendRequestCard img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.friendCard {
+  flex-basis: 25%;
+  text-align: center;
+  font-family: var(--head-font), serif;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.friendCard img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.chatBtn,
+.acceptFriendBtn {
+  background-color: var(--orange);
+  font-family: var(--body-font), serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chatBtn:hover,
+.acceptFriendBtn:hover {
+  background-color: #c46651;
+  cursor: pointer;
+}
+
+
+.searchOutput-inactive {
+  display: none;
+}
+
+.searchOutput h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchOutput h2 a{
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+.searchOutput {
+  /* color: var(--light-blue); */
+  font-weight: bold;
+  font-family: var(--head-font),serif;
+  background-color: white;
+  padding: 1rem;
+  display: block;
+  border-radius: 20px;
+}
+
+.searchCardWrap{
+  display: flex;
+}
+
+.searchCard {
+  flex-basis: 25%;
+  font-family: var(--head-font), serif;
+  margin: 1rem;
+  background-color: var(--bg-lightgrey);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.searchCard img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.sendFriendRequestBtn {
+  background-color: var(--orange);
+  font-family: var(--body-font), serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sendFriendRequestBtn:hover {
+  background-color: var(--light-blue);
+  cursor: pointer;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script type="module" src="../scripts/login-signup/signup.js" defer></script>
+    <link rel="stylesheet" href="../styles/singlepage.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNNpgqIXvu6Atdkpfgddrukax9-aV0Fcc&libraries=places&callback=initMap"
+        async defer></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBwEb_-4wH7b5RPQ-Jy2xuzbaikswfhIUY&callback=geocodeAddress"></script> -->
+</head>
+
+<body>
+    <div id="signIn" class="inactive-div active-div">
+        <p><strong>Sign in</strong></p>
+        <label for="txtEmail">Email</label>
+        <input type="email" name="email" id="txtEmail">
+
+        <label for="txtPassword">Password</label>
+        <input type="email" name="password" id="txtPassword">
+        <button id="submitBtn" type="button">Sign in</button>
+        <p>Didn't have an account? <a href="#signUp" id="linkToSignUp"><strong>Register now</strong></a></p>
+    </div>
+
+    <div id="signUp" class="inactive-div">
+        <div id="EmailSignUp" class="inactive-div">
+            <label for="txtEmailSignUp">Email</label>
+            <input type="email" name="txtEmailSignUp" id="txtEmailSignUp">
+
+            <label for="txtPasswordSignUp">Password</label>
+            <input type="email" name="txtPasswordSignUp" id="txtPasswordSignUp">
+
+
+            <button id="backBtnSignUp" type="button">Back</button>
+
+            <button id="submitBtnSignUp" type="button">Next</button>
+        </div>
+        <div id="parentDetails" class="inactive-div">
+            <h2>parentDetails</h2>
+            <label for="firstName">firstName</label>
+            <input type="text" name="firstName" id="firstName">
+            <label for="lastName">lastName</label>
+            <input type="text" name="lastName" id="lastName">
+            <label for="schoolOfKid">schoolOfKid</label>
+            <input type="text" name="schoolOfKid" id="schoolOfKid">
+
+            <label for="profileImg">profileImg</label>
+            <!-- <input type="text" name="profileImg" id="profileImg"> -->
+            <button id="takePhoto" type="button">takePhoto</button>
+            <button id="selectPhoto" type="button">selectPhoto</button>
+            <!-- <label for="uploadPhoto">uploadPhoto</label>
+            <input type="file" id="uploadPhoto" accept="image/png, image/jpeg">
+            <div id="uploadConfirm">
+
+            </div> -->
+            <form action="#" id="uploadPhoto" class="inactive-div">
+                <label for="fileInput"></label>
+                <input type="file" id="fileInput" accept="image/png, image/jpeg" required />
+                <button type="Upload"> Submit</button>
+            </form>
+
+            <div id="videoArea">
+                <video id="video" width="320" height="240" autoplay></video>
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <button id="capture" type="button">capture</button>
+                <button id="retake" type="button">retake</button>
+                <button id="confirmBtn" type="button">confirm</button>
+            </div>
+        </div>
+
+        <div id="kidDetails" class="inactive-div">
+            <h2>kid details</h2>
+            <label for="kidAmount">How many kid you have?</label>
+            <input type="number" name="kidAmount" id="kidAmount">
+            <button id="kidAmountBth" type="button">Add kid details</button>
+            <div id="kidAddedDetails">
+
+
+            </div>
+
+            <div id="KidForm">
+
+            </div>
+
+            <button id="backBtnSignUp2" type="button">Back</button>
+
+            <button id="submitBtnSignUp2" type="button">Register</button>
+        </div>
+
+
+    </div>
+
+    <div id="loggedIn" class="inactive-div">
+        <a href="#" id="friendList">friend list</a>
+        <br>
+        <label for="searchInput">Search for friends</label>
+        <input type="email" name="searchInput" id="searchInput">
+        <button id="submitBtnSearch" type="button">Search</button>
+        <br>
+        <button id="btnLogout" type="button">Log out</button>
+
+        <p>
+            <a href="care-request.html" id="request">Create request</a>
+        </p>
+
+
+
+        <div id="output"></div>
+
+    </div>
+
+</body>
+
+</html>

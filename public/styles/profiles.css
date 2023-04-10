@@ -1,0 +1,179 @@
+:root {
+    --main-blue: #2558d5;
+    --light-blue: #0fabdc;
+    --bg-lightgrey: #f3f3f3;
+    --orange: #ff7e61;
+    --head-font: "Fredoka";
+    --body-font: "Lato";
+  }
+
+main {
+  /* display: grid; */
+  grid-template-rows: auto 1fr;
+  /* height: 100dvh; */
+  gap: 1rem;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin-top: 1rem;
+}
+
+.mainWrap {
+  /* background-color: #fff; */
+  /* width: 95%;
+    height: 98%; */
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2rem 2%;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+}
+
+#app-wrapper {
+  /* height: 100%; */
+  display: flex;
+}
+
+.section-profile {
+  padding: 1.5rem;
+  width: 100%;
+  background-color: white;
+  /* margin: 0 auto; */
+  border-radius: 10px;
+}
+
+.profile {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+.profile-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+.profile-main-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem auto;
+  /* width: 200px;
+  height: 200px; */
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-main img {
+  width: clamp(150px, calc(150px + 10vw), 350px);
+  object-fit: cover;
+  border-radius: 10px;
+aspect-ratio: 1/1;
+  /* width: 100%; */
+  /* height: 200px; */
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+
+}
+
+.profile-main-info {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.profile-main-info-name {
+  font-family: "Fredoka";
+  font-weight: 600;
+  font-size: clamp(1.5rem, calc(1rem + 2vw), 5rem);
+  color: var(--main-blue);
+}
+
+.profile-main-info-btn {
+  font-family:var(--body-font) ,serif;
+    background-color: transparent;
+  max-width: 20rem;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: clamp(0.75rem, calc(0.5rem + 2vw), 2rem);
+}
+
+.profile-main-info-btn i {
+  color: var(--main-blue);
+}
+
+.profile-main-info-btn:hover,
+.profile-main-info-btn:hover > i {
+  background-color: var(--orange);
+  color: white;
+  border-radius: 10px;
+}
+
+.profile-main-info-transpo {
+  align-self: flex-end;
+}
+
+.profile-main-info-transpo i {
+  color: white;
+  background-color: var(--main-blue);
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.profile-kid {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.profile-kid-header {
+  color: var(--main-blue);
+  font-family: "Fredoka";
+  font-weight: 600;
+}
+
+.profile-kid-profiles {
+  border: 3px solid var(--main-blue);
+  padding: 1rem;
+  border-radius: 10px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-lightgrey);
+}
+
+.profile-kid-profiles i {
+  font-size: clamp(3rem, calc(3rem + 10vw), 10rem);
+  color: var(--main-blue);
+}
+
+.profile-kid-profiles h3 {
+  font-family: "Fredoka";
+  font-weight: 600;
+  color: var(--main-blue);
+}
+
+@media screen and (width < 800px) {
+  main {
+    grid-template-rows: 1fr;
+  }
+  #secondaryMenu {
+    display: none;
+  }
+}

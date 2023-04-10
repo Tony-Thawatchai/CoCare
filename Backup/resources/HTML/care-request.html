@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Care Request</title>
+    <link rel="stylesheet" href="../styles/request.css">
+    <script type="module" src="../scripts/request.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <div class="form-wrapper page" id="request-start">
+
+        <h1>Create New Request</h1>
+   
+        <form action="">
+
+            <div class="request-type">
+                <label for="type">Request Type:
+                    <select class="form" id="type">
+                        <option value="select-type" selected disabled>Select type</option>
+                        <option value="drop-off">Drop off to school</option>
+                        <option value="pick-up">Pick up from school</option>
+                        <option value="host">Host after school</option>
+                        <option value="other">Other type of help</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <div class="help-description">
+                <label>
+                    Help Description 
+                    <textarea id="request-details" name="request-details"></textarea>
+                </label>
+            </div>
+
+            <div class="select-kid">
+                  <label for="child-details">Select Kid</label>  
+                   <div id="child-details">
+                   </div>        
+             </div>
+
+             <div class="location">
+                <label for="start-location">
+                    Start location: 
+                <input type="text" id="start-location">
+                </label>
+
+                <label for="end-location">
+                    End location: 
+                <input type="text" id="end-location">
+                </label>
+            </div>
+           
+            <div class="date">
+                <label for="date">
+                    Date: 
+                    <input type="date" id="date">
+                </label>
+            </div>
+           
+
+            <div class="time">
+                <label for="start-time">
+                    Start time: 
+                <input type="time" id="start-time">
+                </label>
+
+                <label for="end-time">
+                    End time: 
+                <input type="time" id="end-time">
+                </label>
+            </div>
+
+            <div class="select-friend">
+                <label for="friend-details">Select Friends to Send Request To</label>  
+                 <div id="friend-details">
+                 </div>        
+           </div>
+
+            <div class="buttons">  
+                <button id="next">NEXT
+                </button>    
+            </div>
+        </form>
+     </div>
+
+    <div id="request-confirm" class="page">
+
+        <h1>Request Form Details</h1>
+
+            <h3>Request type</h3> 
+            <div id="request-type-output">
+
+            </div>
+
+            <h3>Kids Details</h3>  
+            <div id="kids-details-output">
+                  
+            </div>
+
+            <h3>Request Details</h3>
+            <div id="request-details-output">
+                
+            </div>
+
+            <h3>Date</h3>
+            <div id="date-output">
+                
+            </div>
+        
+
+            <div id="time">
+                <h3>Start Time</h3>
+                <div id="start-time-output">
+                    
+                </div>
+
+                <h3>End Time</h3>
+                <div id="end-time-output">
+                    
+                </div>
+
+            </div>
+
+            <div id="location-output">
+                <h3>Start Location</h3>
+                <div id="start-location-output">
+                    
+                </div>
+                
+                <h3>End Location</h3>
+                <div id="end-location-output">
+                    
+                </div>
+
+            </div>
+
+        <div id="send-to">
+            <h3>Send Request To</h3>
+            <div id="friends-details-output">
+                
+            </div>
+
+            <button id="back">BACK
+            </button>
+            <button id="submit">SUBMIT
+            </button>
+        </div>
+
+    </div>	
+    <div id="request-success" class="page">
+
+        <h1>Your request has been submitted!</h1>
+        <div>(This will cost you 1 parent point.)</div>
+        <div> You can check this care request on your dashboard.</div>
+
+
+
+
+        <div>
+            <button id="dashboard">GO TO DASHBOARD
+            </button>
+        </div>
+
+    </div>	
+
+</main> 
+
+</body>
+</html>

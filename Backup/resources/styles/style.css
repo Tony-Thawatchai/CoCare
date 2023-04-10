@@ -1,0 +1,51 @@
+body {
+    font-size: 1rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 1rem 3rem 3rem 3rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive; 
+    text-align: left;
+    color: #0FABDC;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+img {
+    width: 120px;
+    height: 100%;
+}
+
+.button {
+    font-size: 1rem;
+    font-family: 'Fredoka One';
+    background-color: blue;
+    text-decoration: none;
+    color:  white;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 2px 2px rgb(224 219 219);
+    margin-top: 1rem;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+img {
+    width: 120px;
+    height: 100%;
+}
