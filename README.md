@@ -4,7 +4,7 @@
   Juggling work and parenting schedule is not an easy task. Parent want to do best on both world. Paying for daycare can be expensive and even you can afford it doesn't mean it available
 
   ## Solution
-    * CoCare : Parenting together. We create CoCare to build a community of parent for helping each other take turn taking care of thier kids.
+  CoCare : Parenting together. We create CoCare to build a community of parent for helping each other take turn taking care of thier kids.
 
   ## Features
     * Search for parents in the same school, neighborhood
