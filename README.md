@@ -6,6 +6,8 @@
   ## Solution
   CoCare : Parenting together. We create CoCare to build a community of parent for helping each other take turn taking care of thier kids.
 
+  Using vanilla Javascript, HTML, CSS, Google map API, Google places API, Firebase.
+
   ## Features
     * Search for parents in the same school, neighborhood
     * Ask/Give help to other parents
